@@ -896,7 +896,7 @@ public class Frame extends JFrame {
             public void actionPerformed(ActionEvent e){
                 try {
                 String modelo = iBusqueda.getText();
-                if(modelo.isBlank()){
+                if(modelo.isEmpty()){
                     throw new EspacioVacio();
                 }
                 if(archivo.recargarTablaBusqueda(modelo) == null){
